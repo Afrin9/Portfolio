@@ -1,0 +1,90 @@
+.case-studies-section {
+  background-color: #ffffff;
+  color: #000000;
+  padding: 60px 20px;
+  max-width: 1120px;
+  margin: 0 auto;
+}
+
+.case-title {
+  text-align: center;
+  font-size: 30px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.case-subtitle {
+  text-align: center;
+  font-size: 14px;
+  color: #666;
+  margin-bottom: 40px;
+  line-height: 1.5;
+}
+
+.case-study {
+  margin-bottom: 60px;
+}
+
+.tag {
+  display: inline-block;
+  padding: 4px 10px;
+  font-size: 12px;
+  border-radius: 8px;
+  margin-bottom: 10px;
+  font-weight: bold;
+}
+
+.fintech { background-color: #fff0c2; color: #b88500; }
+.edtech  { background-color: #e5e9ff; color: #4d5aff; }
+.pharma  { background-color: #d0fff3; color: #0b8e6b; }
+
+.case-content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 30px;
+  flex-wrap: wrap;
+}
+
+.image-left {
+  flex-direction: row;
+}
+
+.image-right {
+  flex-direction: row-reverse;
+}
+
+.case-content img {
+  width: 320px;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+.case-text {
+  max-width: 600px;
+}
+
+.case-text h3 {
+  font-size: 22px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.case-text p {
+  font-size: 14px;
+  color: #444;
+  margin-bottom: 15px;
+}
+
+.button {
+  display: inline-block;
+  padding: 8px 16px;
+  font-size: 13px;
+  font-weight: bold;
+  text-decoration: none;
+  border-radius: 4px;
+}
+
+.button.yellow { background-color: #ffc107; color: #000; }
+.button.blue   { background-color: #0033ff; color: #fff; }
+.button.green  { background-color: #00c48c; color: #fff; }
