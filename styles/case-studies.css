@@ -48,47 +48,33 @@
   background-color: #d0fff3;
   color: #0b8e6b;
 }
-.case-content {
+.case-study {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  gap: 30px;
-  flex-wrap: wrap;
-  flex-direction: row;
+  gap: 40px;
+  margin-bottom: 60px;
 }
 
-.case-content.image-left {
-  flex-direction: row;
-}
-
-.case-content.image-right {
+.case-study.reverse {
   flex-direction: row-reverse;
 }
 
+.case-content {
+  flex: 1;
+}
 
-.case-content img {
-  width: 320px;
+.case-image {
+  flex: 1;
+}
+
+.case-image img {
+  max-width: 100%;
+  height: auto;
   border-radius: 10px;
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
 }
 
-.case-text {
-  max-width: 600px;
-}
-
-.case-text h3 {
-  font-size: 22px;
-  font-weight: bold;
-  margin-bottom: 10px;
-}
-
-.case-text p {
-  font-size: 14px;
-  color: #444;
-  margin-bottom: 15px;
-}
-
-.button {
+.btn {
   display: inline-block;
   padding: 8px 16px;
   font-size: 13px;
@@ -97,17 +83,17 @@
   border-radius: 4px;
 }
 
-.button.yellow {
+.btn .fintech{
   background-color: #ffc107;
   color: #000;
 }
 
-.button.blue {
+.btn .edtech {
   background-color: #0033ff;
   color: #fff;
 }
 
-.button.green {
+.btn .pharma{
   background-color: #00c48c;
   color: #fff;
 }
