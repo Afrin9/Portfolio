@@ -1,0 +1,90 @@
+.recent-work-section {
+  text-align: center;
+  padding: 40px 20px;
+  width: 100% ;
+  height: 100vh ;
+  margin: 0 auto;
+  background: white
+}
+
+.recent-work {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 30px 20px;
+}
+
+.recent-work-title {
+  font-size: 2.5em;
+  margin-bottom: 20px;
+  color: #333;
+}
+.recent-work-subtitle {
+  font-size: 1.1rem;
+  color: #666;
+  max-width: 700px;
+  margin: 0 auto 50px;
+  line-height: 1.8;
+}
+
+.carousel {
+    display: flex;
+    width: 100%;
+    height: 100%;
+    position: relative;
+    overflow: hidden;
+    align-items: center;
+    justify-content: center;
+    margin : 0 auto;
+}
+
+.carousel-track {
+    display: flex;
+    transition: transform 0.3s ease;
+}
+
+.work-card {
+    width: 300px;
+    margin: 0 15px;
+    border-radius: 2px;
+    text-align: left ;
+    padding: 5px;
+}
+
+.work-card img {
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+}
+.work-card h3 {
+    font-size: 1.5em;
+     margin: 15px 0 8px 0;
+    color: #333;
+}
+
+.work-card p {
+    font-size: 1rem;
+    color: #666;
+    line-height: 1.5;
+    margin-bottom: 12px;
+}
+
+.prev .next {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 10;
+    cursor: pointer;
+    background: transparent;
+    border: none;
+    cursor: pointer;
+}
+.prev img, .next img {
+    width: 30px;
+    height: 30px;
+}
+.prev {
+    left: 10px;
+}
+.next {
+    right: 10px;
+}
