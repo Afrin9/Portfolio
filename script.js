@@ -1,5 +1,5 @@
 document.addEventListener('DOMContentLoaded', function() {
-      // Mobile navigation toggle
+
       const hamburger = document.querySelector('.hamburger');
       const mobileNav = document.querySelector('.mobile-nav');
       const overlay = document.querySelector('.overlay');
@@ -14,7 +14,7 @@ document.addEventListener('DOMContentLoaded', function() {
         overlay.classList.remove('active');
       });
       
-      // Close mobile nav when clicking on links
+     
       const mobileNavLinks = document.querySelectorAll('.mobile-nav a');
       mobileNavLinks.forEach(link => {
         link.addEventListener('click', function() {
@@ -23,7 +23,7 @@ document.addEventListener('DOMContentLoaded', function() {
         });
       });
       
-      // Carousel functionality
+      
       const track = document.querySelector('.carousel-track');
       const prevBtn = document.querySelector('.prev');
       const nextBtn = document.querySelector('.next');
@@ -37,7 +37,7 @@ document.addEventListener('DOMContentLoaded', function() {
         track.scrollBy({ left: cardWidth, behavior: 'smooth' });
       });
       
-      // Form submission
+     
       const contactForm = document.querySelector('.contact-section');
       contactForm.addEventListener('submit', function(e) {
         e.preventDefault();
