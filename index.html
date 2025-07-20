@@ -4,29 +4,29 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
   <title>Portfolio</title>
-  <link rel="stylesheet" href="styles/style.css" />
+  <link rel="stylesheet" href="styles/intro_style.css" />
   <link rel="stylesheet" href="styles/case-studies.css" />
   <link rel="stylesheet" href="styles/testimonial_style.css" />
   <link rel="stylesheet" href="styles/recentWork_style.css " />
-  <link rel="stylesheet" href="styles/contact_style.css" />  
+  <link rel="stylesheet" href="styles/contact_style.css" />
+  <link rel="stylesheet" href="styles/responsive.css" />
 </head>
 
 <body>
   <div class="page-wrapper">
     <nav class="navbar">
-      <div class="hamburger">
-        <div class="bar"></div>
-        <div class="bar"></div>
-        <div class="bar"></div>
-      </div>
+      <div class="bar"></div>
+      <div class="bar"></div>
+      <div class="bar"></div>
       <div class="nav-links">
         <ul>
-          <li><a href="#">Home</a></li>
-          <li><a href="#">Case Studies</a></li>
-          <li><a href="#">Testimonials</a></li>
-          <li><a href="#">Recent work</a></li>
-          <li><a href="#">Get In Touch</a></li>
+          <li><a href="#home">Home</a></li>
+          <li><a href="#case-studies">Case Studies</a></li>
+          <li><a href="#testimonials">Testimonials</a></li>
+          <li><a href="#recent-work">Recent work</a></li>
+          <li><a href="#contact">Get In Touch</a></li>
         </ul>
       </div>
       <div class="social-links">
@@ -38,18 +38,33 @@
       </div>
     </nav>
 
-    <section class="Intro">
-      <section class="main">
+    <div class="mobile-nav">
+      <ul>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#case-studies">Case Studies</a></li>
+        <li><a href="#testimonials">Testimonials</a></li>
+        <li><a href="#recent-work">Recent work</a></li>
+        <li><a href="#contact">Get In Touch</a></li>
+      </ul>
+      <div class="social-links-box">
+        <a href="#"><img src="assets/logos/linkdin.svg" alt="LinkedIn"></a>
+        <a href="#"><img src="assets/logos/behance.svg" alt="Behance"></a>
+        <a href="#"><img src="assets/logos/Twitter.svg" alt="Twitter"></a>
+      </div>
+    </div>
+
+    <div class="overlay"></div>
+
+    <section id="home" class="Intro">
+      <section class="container">
         <div class="main-content">
           <div class="text">
             <h1>Sumaiya Afrin</h1>
             <p>
-              Intro text: Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates deleniti quisquam fugiat
-              soluta consequatur, molestias, excepturi eveniet, eius nesciunt expedita rerum possimus suscipit eaque
-              sapiente maxime cum odio. Laudantium, ut. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-              eiusmod tempor incididunt ut labore et dolore magna aliqua.
+              Passionate UI/UX designer and frontend developer with over 5 years of experience creating beautiful,
+              functional digital experiences. I specialize in solving complex user problems with intuitive interfaces.
             </p>
-            <a href="#" class="cta">Contact Me></a>
+            <a href="#contact" class="cta">Contact Me  <i class="fas fa-arrow-right"></i></a>
           </div>
 
           <div class="image">
@@ -59,33 +74,34 @@
       </section>
 
       <section class="clients_section">
-        <div class="client_heading">Worked with</div>
-        <div class="clients_logos">
-          <div class="logoBox"><img src="assets/logos/clickup.svg" alt="Client 1" /></div>
-          <div class="logoBox"><img src="assets/logos/dropbox.svg" alt="Client 2" /></div>
-          <div class="logoBox"><img src="assets/logos/paychex.svg" alt="Client 3" /></div>
-          <div class="logoBox"><img src="assets/logos/elastic.svg" alt="Client 4" /></div>
-          <div class="logoBox"><img src="assets/logos/stripe.svg" alt="Client 5" /></div>
+        <div class="container">
+          <div class="client_heading">Worked With</div>
+          <div class="clients_logos">
+            <div class="logoBox"><img src="assets/logos/clickup.svg" alt="Client 1"></div>
+            <div class="logoBox"><img src="assets/logos/dropbox.svg" alt="Client 2"></div>
+            <div class="logoBox"><img src="assets/logos/paychex.svg" alt="Client 3"></div>
+            <div class="logoBox"><img src="assets/logos/elastic.svg" alt="Client 4"></div>
+            <div class="logoBox"><img src="assets/logos/stripe.svg" alt="Client 5"></div>
+          </div>
         </div>
       </section>
     </section>
 
-    <section class="case-studies-section">
-      <section class="case-studies-container">
+    <section id="case-studies" class="case-studies-section">
+      <div class="container">
         <h2 class="case-title">Case Studies</h2>
         <p class="case-subtitle">
-          Solving user & business problems since last 15+ years.<br>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore
-          magna aliqua.
+          Solving user & business problems since last 15+ years. Each project is a unique challenge with measurable
+          results.
         </p>
 
         <div class="case-study">
           <div class="case-content">
             <div class="tag fintech">Fintech</div>
-            <h2>Work name here</h2>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
-              dolore magna aliqua. sed do eiusmod tempor incididunt ut labore et dolore magna.</p>
-            <a href="#" class="btn fintech">View case study ></a>
+            <h2>Banking App Redesign</h2>
+            <p>Transformed a legacy banking application into a modern, user-friendly platform. Increased user engagement
+              by 45% and reduced support tickets by 60% through intuitive UX improvements.</p>
+            <a href="#" class="btn fintech">View case study <i class="fas fa-arrow-right"></i></a>
           </div>
           <div class="case-image">
             <img src="assets/case-studies/case1.svg" alt="Case Study 1">
@@ -95,106 +111,105 @@
         <div class="case-study reverse">
           <div class="case-content">
             <div class="tag edtech">EdTech</div>
-            <h2>Work name here</h2>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
-              dolore magna aliqua. sed do eiusmod tempor incididunt ut labore et dolore magna.</p>
-            <a href="#" class="btn edtech">View case study ></a>
+            <h2>Learning Platform UX</h2>
+            <p>Designed a comprehensive learning management system for a leading education provider. Improved course
+              completion rates by 35% through personalized learning paths and engagement features.</p>
+            <a href="#" class="btn edtech">View case study <i class="fas fa-arrow-right"></i></a>
           </div>
           <div class="case-image">
             <img src="assets/case-studies/case2.svg" alt="Case Study 2">
           </div>
         </div>
 
-
         <div class="case-study">
           <div class="case-content">
             <div class="tag pharma">Pharma</div>
-            <h2>Work name here</h2>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
-              dolore magna aliqua. sed do eiusmod tempor incididunt ut labore et dolore magna.</p>
-            <a href="#" class="btn pharma">View case study ></a>
+            <h2>Healthcare Dashboard</h2>
+            <p>Created an analytics dashboard for healthcare professionals to track patient outcomes. Reduced data
+              analysis time by 50% while improving accuracy of clinical decisions.</p>
+            <a href="#" class="btn pharma">View case study <i class="fas fa-arrow-right"></i></a>
           </div>
           <div class="case-image">
             <img src="assets/case-studies/case3.svg" alt="Case Study 3">
           </div>
         </div>
-      </section>
+      </div>
     </section>
 
 
-    <section class="testimonials-section">
-      <h2 class="testimonial-title">Testimonials</h2>
-      <p class="testimonial-subtitle">
-        What my clients say about me.<br>
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore
-        magna aliqua.
-      </p>
+    <section id="testimonials" class="testimonials-section">
+      <div class="container">
+        <h2 class="testimonial-title">Testimonials</h2>
+        <p class="testimonial-subtitle">
+          What my clients say about me:
+        </p>
 
-      <div class="testimonials-container">
-        <div class="testimonial">
-          <div class="quaotation">
-            <img src="assets/testimonial assets/quotation.svg" alt="">
-          </div>
-          <div class="testimonial-content">
-            <p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et
-              dolore magna aliqua."</p>
-            <div class="client-info">
-              <img src="assets/testimonial assets/client photos/Client photo 1.png" alt="">
-              <h3>Client Name</h3>
+        <div class="testimonials-container">
+          <div class="testimonial">
+            <div class="quaotation">
+              <img src="assets/testimonial assets/quotation.svg" alt="">
+            </div>
+            <div class="testimonial-content">
+              <p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et
+                dolore magna aliqua."</p>
+              <div class="client-info">
+                <img src="assets/testimonial assets/client photos/Client photo 1.png" alt="">
+                <h3>Client Name</h3>
+              </div>
             </div>
           </div>
-        </div>
 
-        <div class="testimonial">
-          <div class="quaotation">
-            <img src="assets/testimonial assets/quotation.svg" alt="">
-          </div>
-          <div class="testimonial-content">
-            <p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et
-              dolore magna aliqua."</p>
-            <div class="client-info">
-              <img src="assets/testimonial assets/client photos/Client photo 2.png" alt="">
-              <h3>Client Name</h3>
+          <div class="testimonial">
+            <div class="quaotation">
+              <img src="assets/testimonial assets/quotation.svg" alt="">
+            </div>
+            <div class="testimonial-content">
+              <p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et
+                dolore magna aliqua."</p>
+              <div class="client-info">
+                <img src="assets/testimonial assets/client photos/Client photo 2.png" alt="">
+                <h3>Client Name</h3>
+              </div>
             </div>
           </div>
-        </div>
 
-        <div class="testimonial">
-          <div class="quaotation">
-            <img src="assets/testimonial assets/quotation.svg" alt="">
-          </div>
-          <div class="testimonial-content">
-            <p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et
-              dolore magna aliqua."</p>
-            <div class="client-info">
-              <img src="assets/testimonial assets/client photos/Client photo 3.png" alt="">
-              <h3>Client Name</h3>
+          <div class="testimonial">
+            <div class="quaotation">
+              <img src="assets/testimonial assets/quotation.svg" alt="">
+            </div>
+            <div class="testimonial-content">
+              <p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et
+                dolore magna aliqua."</p>
+              <div class="client-info">
+                <img src="assets/testimonial assets/client photos/Client photo 3.png" alt="">
+                <h3>Client Name</h3>
+              </div>
             </div>
           </div>
-        </div>
 
-        <div class="testimonial">
-          <div class="quaotation">
-            <img src="assets/testimonial assets/quotation.svg" alt="">
-          </div>
-          <div class="testimonial-content">
-            <p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et
-              dolore magna aliqua."</p>
-            <div class="client-info">
-              <img src="assets/testimonial assets/client photos/Client photo 4.png" alt="">
-              <h3>Client Name</h3>
+          <div class="testimonial">
+            <div class="quaotation">
+              <img src="assets/testimonial assets/quotation.svg" alt="">
+            </div>
+            <div class="testimonial-content">
+              <p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et
+                dolore magna aliqua."</p>
+              <div class="client-info">
+                <img src="assets/testimonial assets/client photos/Client photo 4.png" alt="">
+                <h3>Client Name</h3>
+              </div>
             </div>
           </div>
         </div>
       </div>
+
     </section>
 
-    <section class="recent-work-section">
-      <section class="recent-work">
+    <section id="recent-work" class="recent-work-section">
+      <div class="container">
         <h2 class="recent-work-title">Recent Work</h2>
         <p class="recent-work-subtitle">
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore
-          magna aliqua.
+          Explore my latest projects and design solutions across various industries.
         </p>
 
         <div class="carousel">
@@ -203,53 +218,69 @@
           <div class="carousel-track">
             <div class="work-card">
               <img src="assets/recent work/Mask group2.png" alt="Work 1">
-              <h3>Work Name Here</h3>
-              <p>Short description of the work.</p>
-              <button class="btn cta">Know More ></button>
+              <div class="work-card-content">
+                <h3>E-commerce Dashboard</h3>
+                <p>Advanced analytics dashboard for online retailers with real-time sales tracking and inventory
+                  management.</p>
+                <button class="btn cta">Know More <i class="fas fa-arrow-right"></i></button>
+              </div>
             </div>
+
             <div class="work-card">
               <img src="assets/recent work/Mask group.png" alt="Work 2">
-              <h3>Work Name Here</h3>
-              <p>Short description of the work.</p>
-              <button class="btn cta">Know More ></button>
+              <div class="work-card-content">
+                <h3>Fitness Tracking App</h3>
+                <p>Mobile application for tracking workouts, nutrition, and health metrics with personalized plans.</p>
+                <button class="btn cta">Know More <i class="fas fa-arrow-right"></i></button>
+              </div>
+            </div>
+
+            <div class="work-card">
+              <img src="assets/recent work/Mask group2.png" alt="Work 3">
+              <div class="work-card-content">
+                <h3>Real Estate Platform</h3>
+                <p>Comprehensive property search platform with virtual tours and AI-powered recommendations.</p>
+                <button class="btn cta">Know More <i class="fas fa-arrow-right"></i></button>
+              </div>
             </div>
           </div>
           <button class="next"><img src="assets/recent work/next.svg" alt="Next"></button>
         </div>
-      </section>
+      </div>
     </section>
 
-    <section class="contact-container">
+    <section id="contact" class="contact-container">
       <div class="contact-section">
         <h2>Get In Touch</h2>
-        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptatum minima nam adipisci in beatae dicta
-          tempore inventore explicabo corporis doloribus, est architecto, voluptates aliquid quam vero officiis nulla
-          quod ipsa.</p>
+        <p>Have a project in mind? Let's discuss how I can help bring your vision to life. Feel free to reach out with
+          any
+          questions or inquiries.</p>
 
-        <h2>Email</h2>
+        <h2>Contact</h2>
         <div class="form-group">
-          <label for="email">Please enter your email.</label>
+          <label for="email">Email Address</label>
           <input type="email" id="email" name="email" placeholder="Enter your email" required>
         </div>
 
         <div class="form-group">
-          <label for="mobile"><strong>Mobile</strong></label>
+          <label for="mobile">Mobile Number</label>
           <input type="text" id="mobile" name="mobile" placeholder="Enter mobile">
         </div>
 
         <div class="form-group">
-          <label for="message"><strong>Message</strong></label>
-          <textarea id="message" name="message" placeholder="Enter your message"></textarea>
+          <label for="message">Message</label>
+          <textarea id="message" name="message" placeholder="Tell me about your project..."></textarea>
         </div>
 
-        <button type="submit" class="submit-btn">Submit &gt;</button>
+        <button type="submit" class="submit-btn">Submit <i class="fas fa-paper-plane"></i></button>
 
         <div class="footer">
-          Made with <span class="heart">❤️</span> 
+          Made with <span class="heart">❤️</span>
         </div>
       </div>
     </section>
-
+  </div>
+    <script src="script.js"></script>
 </body>
 
 </html>

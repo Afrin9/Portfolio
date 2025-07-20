@@ -95,3 +95,16 @@
     transform: translateX(-50%);
 }
 
+@media (max-width: 768px) {
+  .testimonials-container {
+    grid-template-columns: 1fr;
+  }
+  
+  .testimonial-title {
+    font-size: 2rem;
+  }
+  
+  .testimonial-subtitle {
+    font-size: 1rem;
+  }
+}

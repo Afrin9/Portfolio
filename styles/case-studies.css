@@ -6,11 +6,6 @@
   height: auto;
   margin: 0 auto;
 }
-.case-studies-container {
-  max-width: 1200px;
-  margin: 0 auto;
-  padding: 30px 20px;
-}
 
 .case-title {
   text-align: center;
@@ -25,10 +20,6 @@
   color: #666;
   margin-bottom: 40px;
   line-height: 1.5;
-}
-
-.case-study {
-  margin-bottom: 60px;
 }
 
 .tag {
@@ -54,6 +45,7 @@
   background-color: #d0fff3;
   color: #0b8e6b;
 }
+
 .case-study {
   display: flex;
   align-items: center;
@@ -61,6 +53,7 @@
   gap: 40px;
   margin-bottom: 60px;
 }
+
 
 .case-study.reverse {
   flex-direction: row-reverse;
@@ -80,6 +73,10 @@
   border-radius: 10px;
 }
 
+.case-image:hover img {
+  transform: scale(1.05);
+}
+
 .btn {
   display: inline-block;
   padding: 8px 16px;
@@ -89,7 +86,7 @@
   border-radius: 4px;
 }
 
-.btn .fintech{
+.btn .fintech {
   background-color: #ffc107;
   color: #000;
 }
@@ -99,7 +96,33 @@
   color: #fff;
 }
 
-.btn .pharma{
+.btn .pharma {
   background-color: #00c48c;
   color: #fff;
+}
+
+@media (max-width: 992px) {
+  .case-study, 
+  .case-study.reverse {
+    flex-direction: column;
+  }
+  
+  .case-content, 
+  .case-image {
+    width: 100%;
+  }
+  
+  .case-title {
+    font-size: 2.2rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .case-title {
+    font-size: 2rem;
+  }
+  
+  .case-subtitle {
+    font-size: 1rem;
+  }
 }
