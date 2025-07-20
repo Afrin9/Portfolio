@@ -91,13 +91,13 @@ h3 {
   width: 80%;
   background-color: var(--medium);
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
   padding: 15px 30px;
   position: sticky;
   top: 0;
   z-index: 1000;
-  box-shadow: 0 2px 15px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 2px 15px rgba(71, 71, 71, 0.2);
   margin: auto;
   border-radius: 0 0 10px 10px;
 }
